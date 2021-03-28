@@ -75,12 +75,12 @@ INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRES
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('u0009', '황정민', 'jmhwang', 'jmjm1111', 'jmjm@naver.com', '서울시 금천구', TO_DATE('65/03/13', 'RR/MM/DD'), 20, 1700,
-        'Y', 'Y', '08/01/2020', '회원', 'N', '-', TO_DATE('19/06/07', 'RR/MM/DD'));
+        'Y', 'Y', '01/01/2021', '회원', 'N', '-', TO_DATE('19/06/07', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('u0010', '김수홍', 'shkim', 'shhs1234', 'sh4000@naver.com', '인천 남동구', TO_DATE('71/01/30', 'RR/MM/DD'), 333, 10000,
-        'N', 'N', '-', '회원', 'Y', '10/10/2020', TO_DATE('19/06/11', 'RR/MM/DD'));
+        'N', 'N', '-', '회원', 'Y', '11/15/2019', TO_DATE('19/06/11', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
@@ -1270,8 +1270,6 @@ VALUES ('wn00022', 'u0007');
 COMMIT;
 
 
-
-
 ----------WEB_NOV_INFO
 
 CREATE TABLE WEB_NOV_INFO
@@ -1874,6 +1872,49 @@ VALUES ('wr15', 5);
 
 COMMIT;
 
+---------QNA
+
+CREATE TABLE QNA (
+	POST_NUM NUMBER	NOT NULL PRIMARY KEY,
+	MEM_NUM	VARCHAR2(15) NOT NULL REFERENCES MEM_INFO(MEM_NUM),
+	QNA_TITLE VARCHAR2(100) NOT NULL,
+	QNA_OPEN_YN	CHAR(2)	DEFAULT 'Y' NOT NULL CHECK(QNA_OPEN_YN IN ('Y', 'N')),
+	QNA_ANSWER_YN CHAR(2) DEFAULT 'N' NOT NULL CHECK(QNA_ANSWER_YN IN ('Y', 'N')),
+	QNA_DATE DATE NOT NULL,
+    QNA_CONTENT VARCHAR2(4000) NOT NULL
+);
+
+Insert into QNA (POST_NUM,MEM_NUM,QNA_TITLE,QNA_OPEN_YN,QNA_ANSWER_YN,QNA_DATE,QNA_CONTENT) values (1,'u0007','1회 공모전 상금 수령 관련 문의드립니다','Y ','Y ',to_date('20/01/15','RR/MM/DD'),'상금 수령시 제세공과금이 있는지 궁금합니다. 5회 이후의 분량에 대한 수익 분배는 어떻게 되는지도 알고 싶어요.');
+Insert into QNA (POST_NUM,MEM_NUM,QNA_TITLE,QNA_OPEN_YN,QNA_ANSWER_YN,QNA_DATE,QNA_CONTENT) values (2,'u0030','질문) 코인 무료로 얻을 수 있는 방법','Y ','Y ',to_date('20/02/03','RR/MM/DD'),'코인을 다 썼어요. 혹시 무료로 코인 얻을 수 있는 방법이 있나요?? 다른데는 기다리면 무료 같은게 있던데 여긴 없나요???');
+Insert into QNA (POST_NUM,MEM_NUM,QNA_TITLE,QNA_OPEN_YN,QNA_ANSWER_YN,QNA_DATE,QNA_CONTENT) values (3,'u0020','예약구매 했는데 단행본 배송은 언제부터 시작되나요?','Y ','Y ',to_date('20/03/05','RR/MM/DD'),'전지적 독자시점 단행본을 신청했는데 배송관련한 기능이 아직 준비중이네요. 단행본 출시는 4월로 알고 있는데 언제쯤 받을 수 있을까요.');
+Insert into QNA (POST_NUM,MEM_NUM,QNA_TITLE,QNA_OPEN_YN,QNA_ANSWER_YN,QNA_DATE,QNA_CONTENT) values (4,'u0021','아진짜~~사진 억케올림','Y ','Y ',to_date('20/04/02','RR/MM/DD'),'방법~ 알려주^^');
+Insert into QNA (POST_NUM,MEM_NUM,QNA_TITLE,QNA_OPEN_YN,QNA_ANSWER_YN,QNA_DATE,QNA_CONTENT) values (5,'u0027','선물함 기능은 없나요??','N ','Y ',to_date('20/05/02','RR/MM/DD'),'카카오페이지와 조아라에는 선물함이 있었는데 여기는 없나보네요? 고객 혜택 서비스가 없나요?');
+Insert into QNA (POST_NUM,MEM_NUM,QNA_TITLE,QNA_OPEN_YN,QNA_ANSWER_YN,QNA_DATE,QNA_CONTENT) values (6,'u0012','와 진짜 재밌는데 다봐서 볼께 없네요. 업뎃 언제되죠?_?','Y ','Y ',to_date('20/06/04','RR/MM/DD'),'와 넘 재밌어서 밤새서 다 봐버렸네요. 다른 사이트는 유료라서 기다리고 있는데 혹시 여기 업뎃이 느린 이유가 있어요? 빨리 올려주면 좋겠는데 ');
+Insert into QNA (POST_NUM,MEM_NUM,QNA_TITLE,QNA_OPEN_YN,QNA_ANSWER_YN,QNA_DATE,QNA_CONTENT) values (7,'u0006','신고 몇 회 누적되면 블라인드 되나요?','Y ','Y ',to_date('20/07/15','RR/MM/DD'),'신고당할만한 댓글이 아닌데 신고를 5개나 받았습니다. 개수가 누적되면 처리하는 것인지, 운영자분들이 처리하는 것인지 알려주세요.');
+Insert into QNA (POST_NUM,MEM_NUM,QNA_TITLE,QNA_OPEN_YN,QNA_ANSWER_YN,QNA_DATE,QNA_CONTENT) values (8,'u0010','공모전 결과가 궁금한데요 차단 좀 풀어주시죠','N ','Y ',to_date('20/11/15','RR/MM/DD'),'제가 뭐 심한 말 한 것도 아니고 팩트만 말했는데 이게 왜 차단? 그리고 공모전 제출한거 업데이트 못해서 떨어지면 책임지실겁니까?');
+Insert into QNA (POST_NUM,MEM_NUM,QNA_TITLE,QNA_OPEN_YN,QNA_ANSWER_YN,QNA_DATE,QNA_CONTENT) values (9,'u0009','탈퇴시 제출했던 공모작품은 어떻게 되나요','N ','N ',to_date('20/12/15','RR/MM/DD'),'다른 플랫폼에 독점 계약하게 되면서 해당 사이트는 탈퇴하려 합니다. 이럴 경우 기존에 공모전 제출됐던 작품도 삭제하고 싶은데 절차가 어떻게 되나요.');
+Insert into QNA (POST_NUM,MEM_NUM,QNA_TITLE,QNA_OPEN_YN,QNA_ANSWER_YN,QNA_DATE,QNA_CONTENT) values (10,'u0026','배너 디자인 공모전은 없나요???','Y ','Y ',to_date('20/01/01','RR/MM/DD'),'제가 요새 포토샵과 피그마에 푹 빠졌는데 배너 디자인 공모전이 열리면 꼭 참가해보고 싶네요. 계획하고 계신게 있으시다면 일정을 알고 싶습니다.');
 
 
+CREATE TABLE "QNA_REPLY" (
+	"REPLY_NUM" NUMBER NOT NULL PRIMARY KEY,
+	"POST_NUM" NUMBER NOT NULL REFERENCES QNA(POST_NUM),
+	"REPLY_DATE" DATE NOT NULL,
+	"REPLY_ID" VARCHAR2(30) NOT NULL,
+	"REPLY_CONTENT" VARCHAR2(700) NOT NULL
+);
 
+Insert into QNA_REPLY (REPLY_NUM,POST_NUM,REPLY_DATE,REPLY_ID,REPLY_CONTENT) values (1,1,to_date('20/01/15','RR/MM/DD'),'manager01','안녕하세요~ sjkim님! 당신의 첫번째 책 FirstBook 관리자입니다. 문의주신 상금은 제세공과금이 별도로 부과되며 별도로 계좌를 공지해드릴 예정입니다. 아울러 상금 수령은 sjkim님이 원하시는 계좌와 신분증 사본을 저희쪽에 보내주시면 서류 검토후 계좌 입금해 드릴 예정입니다. ^^');
+Insert into QNA_REPLY (REPLY_NUM,POST_NUM,REPLY_DATE,REPLY_ID,REPLY_CONTENT) values (2,1,to_date('20/01/16','RR/MM/DD'),'sjkim','아… 그렇군요! 답변 감사합니다 얼른 보낼께요 ㅎㅎㅎ');
+Insert into QNA_REPLY (REPLY_NUM,POST_NUM,REPLY_DATE,REPLY_ID,REPLY_CONTENT) values (3,2,to_date('20/02/03','RR/MM/DD'),'manager01','안녕하세요~jspark님! 당신의 첫번째 책 FirstBook 관리자입니다. 아쉽게도 저희 서비스는 별도의 코인 제공이 불가능한 점 양해부탁드립니다. 다만 일주일에 한번씩 위클리 코인 서비스를 운영중에 있으니 아주 잠시, 며칠만 기다려주시면 마이페이지에서 코인을 수령하실 수 있으십니다. 다시한번 저희 서비스를 이용해주셔서 감사드립니다 ^^');
+Insert into QNA_REPLY (REPLY_NUM,POST_NUM,REPLY_DATE,REPLY_ID,REPLY_CONTENT) values (4,2,to_date('20/02/04','RR/MM/DD'),'jspark','아쉽네요!! 좀만 더 참아보죠 뭐 ㅋㅋㅋ 아 다음편 보고 싶다!!!');
+Insert into QNA_REPLY (REPLY_NUM,POST_NUM,REPLY_DATE,REPLY_ID,REPLY_CONTENT) values (5,3,to_date('20/03/05','RR/MM/DD'),'manager01','안녕하세요~ coffeecanu님! 당신의 첫번째 책 FirstBook 관리자입니다. 문의하신 단행본 배송은 현재 서비스 준비중에 있습니다! 사이트 상에서 확인하시면 더욱 좋으실텐데 아쉬우시죠 ㅠㅜ 배송이 완료되면 문자나 쪽지등으로 별도의 연락을 드릴 예정입니다. ');
+Insert into QNA_REPLY (REPLY_NUM,POST_NUM,REPLY_DATE,REPLY_ID,REPLY_CONTENT) values (6,3,to_date('20/03/06','RR/MM/DD'),'coffeecanu','친절한 답변 감사합니다. 커피 한잔 하시고 오늘도 여유로운 하루 되세요.');
+Insert into QNA_REPLY (REPLY_NUM,POST_NUM,REPLY_DATE,REPLY_ID,REPLY_CONTENT) values (7,4,to_date('20/04/02','RR/MM/DD'),'manager01','안녕하세요~ cjim님! 당신의 첫번째 책 FirstBook 관리자입니다. 게시판 하단에 있는 파일 첨부 기능을 사용하시면 됩니다. 키보드의 CTRL키를 누르고 여러 개를 선택하시면 한번에 여러 사진을 올리실 수도 있습니다.');
+Insert into QNA_REPLY (REPLY_NUM,POST_NUM,REPLY_DATE,REPLY_ID,REPLY_CONTENT) values (8,4,to_date('20/04/02','RR/MM/DD'),'cjim','이야~고맙다!!!!!~~글만~~~죽어라고~~ 올릴뻔~~키키키~!!! 고맙다…………^^~~~ 사랑한다~~~~………………!!!');
+Insert into QNA_REPLY (REPLY_NUM,POST_NUM,REPLY_DATE,REPLY_ID,REPLY_CONTENT) values (9,5,to_date('20/05/02','RR/MM/DD'),'manager01','안녕하세요~ neson님! 당신의 첫번째 책 FirstBook 관리자입니다. 안타깝게도 저희는 별도의 선물함 기능은 없습니다만, 통합적으로 코인제도를 운영중에 있습니다! 마이페이지에서 위클리 코인을 기다려서 꼭 눌러주시면 무료로 소설 감상이 가능합니다. ^^');
+Insert into QNA_REPLY (REPLY_NUM,POST_NUM,REPLY_DATE,REPLY_ID,REPLY_CONTENT) values (10,5,to_date('20/05/03','RR/MM/DD'),'neson','위클리 코인 좋네요~ ㅎㅎ 답변 감사합니당');
+Insert into QNA_REPLY (REPLY_NUM,POST_NUM,REPLY_DATE,REPLY_ID,REPLY_CONTENT) values (11,6,to_date('20/06/05','RR/MM/DD'),'manager01','안녕하세요~ scyang님! 당신의 첫번째 책 FirstBook 관리자입니다. 저희 서비스를 사랑해주셔서 진심으로 감사드립니다!! FirsBook은 작가님들과 계약한 출판사, 에이전시에서 소설을 받아 업데이트하는 2차 플랫폼인 점을 알려드리고 싶습니다. 문피아나 조아라에 비하면 업데이트가 느리지만 그만큼 양질의 소설을 공급해드리려 노력하고 있으며, 공모전을 통해 신인 작가들 작품도 많이 게시중에 있습니다. 조금만 기다려주시면 금새 새로운 소설들이 업데이트 되니 양해를 부탁드리겠습니다 ^^');
+Insert into QNA_REPLY (REPLY_NUM,POST_NUM,REPLY_DATE,REPLY_ID,REPLY_CONTENT) values (12,7,to_date('20/07/15','RR/MM/DD'),'manager01','안녕하세요~ jmchun님! 당신의 첫번째 책 FirstBook 관리자입니다. 신고가 많이 누적되어 심려끼쳐드린 점 죄송하게 생각합니다. 신고에 대한 블라인드는 회원들의 재량으로 20회 누적시 이루어지지만, 차단 여부는 관리자 판단하에 이뤄집니다. 0살부터미적분에 달으신 해당 댓글은 차단과 무관한 것으로 판단되니 너무 염려 마시길 바랍니다. 향후 신고제도를 더욱 엄격히 보완하면 이런 불편한 점도 없어지실 겁니다. 조금만 기다려주세요 ^^');
+Insert into QNA_REPLY (REPLY_NUM,POST_NUM,REPLY_DATE,REPLY_ID,REPLY_CONTENT) values (13,8,to_date('20/11/15','RR/MM/DD'),'manager01','안녕하세요~ shkim님! 당신의 첫번째 책 FirstBook 관리자입니다. 안타깝게도 회원님의 차단 기간(30일) 동안은 별도의 서비스 이용이 불가능하십니다. 공모전 결과나 수상시에 제공되는 상금 등에 대한 부분은 별도로 통지 가능한 부분이라 이 부분 양해 부탁드리겠습니다.');
+Insert into QNA_REPLY (REPLY_NUM,POST_NUM,REPLY_DATE,REPLY_ID,REPLY_CONTENT) values (14,10,to_date('20/01/02','RR/MM/DD'),'manager01','안녕하세요~ tlkim님! 당신의 첫번째 책 FirstBook 관리자입니다. 마침 배너 디자인 공모전이 계획 중에 있습니다. 2021년 상반기에 시작될 예정이니 조금만 기다려주세면 곧 공지사항이 올라올겁니다. 궁금하신 사항이 해결되셨길 바랍니다.');
