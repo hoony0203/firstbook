@@ -1926,6 +1926,8 @@ Insert into QNA_REPLY (REPLY_NUM,POST_NUM,REPLY_DATE,REPLY_ID,REPLY_CONTENT) val
 Insert into QNA_REPLY (REPLY_NUM,POST_NUM,REPLY_DATE,REPLY_ID,REPLY_CONTENT) values (13,8,to_date('20/11/15','RR/MM/DD'),'manager01','안녕하세요~ shkim님! 당신의 첫번째 책 FirstBook 관리자입니다. 안타깝게도 회원님의 차단 기간(30일) 동안은 별도의 서비스 이용이 불가능하십니다. 공모전 결과나 수상시에 제공되는 상금 등에 대한 부분은 별도로 통지 가능한 부분이라 이 부분 양해 부탁드리겠습니다.');
 Insert into QNA_REPLY (REPLY_NUM,POST_NUM,REPLY_DATE,REPLY_ID,REPLY_CONTENT) values (14,10,to_date('20/01/02','RR/MM/DD'),'manager01','안녕하세요~ tlkim님! 당신의 첫번째 책 FirstBook 관리자입니다. 마침 배너 디자인 공모전이 계획 중에 있습니다. 2021년 상반기에 시작될 예정이니 조금만 기다려주세면 곧 공지사항이 올라올겁니다. 궁금하신 사항이 해결되셨길 바랍니다.');
 
+------FAQ
+
 CREATE TABLE "FAQ" (
 	"POST_NUM"	NUMBER NOT NULL PRIMARY KEY,
 	"FAQ_POST_TITLE" VARCHAR2(300) NOT NULL,
@@ -1942,3 +1944,13 @@ Insert into FAQ (POST_NUM,FAQ_POST_TITLE,FAQ_POST_CONTENT) values (7,'작가분�
 Insert into FAQ (POST_NUM,FAQ_POST_TITLE,FAQ_POST_CONTENT) values (8,'구매 내역을 확인하고 싶은데 어떻게 하면될까요?','구매내역은 마이페이지 좌측 상단의 결제 내역에서 보실 수 있습니다. 또한 구매하신 소설은 마이페이지의 ''내 서재''에서 찾아보실 수 있습니다.');
 Insert into FAQ (POST_NUM,FAQ_POST_TITLE,FAQ_POST_CONTENT) values (9,'공모전에 출품하고 싶습니다. 일정은 어디서 확인하나요? ','공모전은 페이지 상단 공모전 버튼을 클릭하여 확인해보실 수 있으며, 공모전 일정은 공모전 페이지와 공지사항에서 알려드릴 예정입니다. 2020년 10월 4분기 이후로 매년분기마다 공모전이 진행되고 있습니다.');
 Insert into FAQ (POST_NUM,FAQ_POST_TITLE,FAQ_POST_CONTENT) values (10,'탈퇴는 어떻게 하나요?','회원 탈퇴는 마이페이지에서 가능합니다. 탈퇴시 보유한 코인은 자동 환불되지 않으니 환불 이후 탈퇴하시는 것을 권고드립니다. 또한 보유한 서재 또한 초기화되니 탈퇴에 앞서 신중하게 판단하시기 바랍니다.');
+
+----
+
+CREATE TABLE "NOTICE" (
+	"NOTICE_NUM" NUMBER	NOT NULL,
+	"NOTICE_DATE" DATE NOT NULL,
+	"NOTICE_NAME" VARCHAR2(40) NOT NULL,
+	"NOTICE_VIEW_COUNT"	NUMBER NOT NULL,
+	"NOTICE_CONTENT" VARCHAR2(2000) NULL
+    );

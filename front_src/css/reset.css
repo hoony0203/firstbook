@@ -1,10 +1,70 @@
 @charset "UTF-8";
-* {margin:0;padding:0;vertical-align:middle;}
 
-html,body {width:100%;height:100%;}
+ 
 
-/* 링크 태그 */
-a {color:#444;text-decoration:none;}
-table {border-collapse:collapse;}
+/* 테두리기준 */
 
-ul,li {list-style:none;}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Nanum Gothic", serif;
+  background: #ffffff;
+  color: #4c4c4c;
+  font-size: 12px;
+}
+
+.cf:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+ol,
+
+ul,
+
+li,
+
+dl {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 텍스트 */
+
+h1 {
+  visibility: hidden;
+}
+
+/* 테이블 */
+
+table {
+  border-collapse: collapse;
+}
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+button{
+  background: inherit;
+  border:none;
+  box-shadow:none;
+  border-radius:0;
+  padding:0;
+  overflow:visible;
+  cursor:pointer;
+}
+  
