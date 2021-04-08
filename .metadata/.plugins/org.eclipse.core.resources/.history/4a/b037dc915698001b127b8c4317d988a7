@@ -1,0 +1,81 @@
+package com.lastbug.firstbook.admin.model.dao;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
+
+import com.lastbug.firstbook.common.config.ConfigLocation;
+import com.lastbug.firstbook.member.model.dto.MemberDTO;
+
+public class AdminDAO {
+	
+	private final Properties prop;
+	
+	
+	public AdminDAO() {
+		
+		prop = new Properties();
+		
+		try {
+			prop.loadFromXML(new FileInputStream(ConfigLocation.MAPPER_LOCATION + "admin-mapper.xml"));
+		
+		} catch (IOException e) {
+
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
+	public List<MemberDTO> selectAllMemList(Connection con) {
+		
+		Statement stmt = null;
+		ResultSet rset = null;
+		
+		List<MemberDTO> memList = null;
+		
+		String query = prop.getProperty("selectAllMemList");
+		
+		System.out.println(query);
+		
+		try {
+			stmt = con.createStatement();
+			
+			rset = stmt.executeQuery(query);
+			
+			memList = new ArrayList<>();
+		
+			while(rset.next()) {
+				
+				MemberDTO mem = new MemberDTO();
+				
+				mem.setNum(rset.getInt("MEM_NO"));
+				mem.setName(rset.getString("MEM_NAME"));
+				mem.setId(rset.getString("MEM_ID"));
+				mem.setPwd(rset.getString("MEM_PWD"));
+				mem.setEmail(rset.getString("MEM_EMAIL"));
+				mem.setAddress(rset.getString("MEM_ADDRESS"));
+				mem.setBirthDate(rset.getDate("MEM_BIRTHDATE"));
+				
+				
+				
+			}
+			
+			
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+		
+		
+		return memList;
+	}
+	
+	
+}

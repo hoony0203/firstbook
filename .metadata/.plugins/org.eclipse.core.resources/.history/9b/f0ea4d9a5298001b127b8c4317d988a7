@@ -1,0 +1,15 @@
+package com.lastbug.firstbook.admin.model.service;
+
+import static com.lastbug.firstbook.common.jdbc.JDBCTemplate.getConnection;
+
+import java.sql.Connection;
+import java.util.List;
+
+import com.lastbug.firstbook.member.model.dao.MemberDAO;
+import com.lastbug.firstbook.member.model.dto.MemberDTO;
+
+public class AdminService {
+
+	
+	
+}

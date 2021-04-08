@@ -1,0 +1,14 @@
+package com.lastbug.firstbook.member.model.dto;
+
+import java.sql.Date;
+
+public class MemberDTO implements java.io.Serializable{
+
+
+	private static final long serialVersionUID = -7685458380084706512L;
+
+	
+	
+	
+	
+}

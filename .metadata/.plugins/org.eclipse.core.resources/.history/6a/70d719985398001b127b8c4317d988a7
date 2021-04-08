@@ -1,0 +1,43 @@
+package com.lastbug.firstbook.admin.model.dao;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.sql.Connection;
+import java.util.List;
+import java.util.Properties;
+
+import static com.lastbug.firstbook.common.jdbc.JDBCTemplate.*;
+
+import com.lastbug.firstbook.common.config.ConfigLocation;
+import com.lastbug.firstbook.member.model.dto.MemberDTO;
+
+public class AdminDAO {
+	
+	private final Properties prop;
+	
+	
+	public AdminDAO() {
+		
+		prop = new Properties();
+		
+		try {
+			prop.loadFromXML(new FileInputStream(ConfigLocation.MAPPER_LOCATION));
+		
+		} catch (IOException e) {
+
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
+	public List<MemberDTO> selectAllMemList(Connection con) {
+		
+		
+		
+		
+		return null;
+	}
+	
+	
+}

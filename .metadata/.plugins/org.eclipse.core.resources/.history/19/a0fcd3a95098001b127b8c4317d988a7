@@ -1,0 +1,22 @@
+package com.lastbug.firstbook.member.model.service;
+
+import java.sql.Connection;
+import java.util.List;
+
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+import static com.lastbug.firstbook.common.jdbc.JDBCTemplate.*; 
+
+import com.lastbug.firstbook.member.model.dto.MemberDTO;
+
+public class MemberService {
+
+	public List<MemberDTO> selectAllMemList() {
+
+		Connection con = getConnection();
+		
+		return null;
+	}
+	
+	
+}

@@ -1,2 +1,0 @@
-# firstbook
-firstbook semi project

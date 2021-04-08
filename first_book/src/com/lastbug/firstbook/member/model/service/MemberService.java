@@ -1,0 +1,26 @@
+package com.lastbug.firstbook.member.model.service;
+
+import java.sql.Connection;
+import java.util.List;
+
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+import static com.lastbug.firstbook.common.jdbc.JDBCTemplate.*;
+
+import com.lastbug.firstbook.member.model.dao.MemberDAO;
+import com.lastbug.firstbook.member.model.dto.MemberDTO;
+
+public class MemberService {
+	
+	private MemberDAO memDAO;
+	
+	public MemberService() {
+		
+		memDAO = new MemberDAO();
+		
+	}
+	
+
+	
+	
+}

@@ -1,0 +1,32 @@
+package com.lastbug.firstbook.admin.model.dao;
+
+import java.sql.Connection;
+import java.util.List;
+import java.util.Properties;
+
+import static com.lastbug.firstbook.common.jdbc.JDBCTemplate.*;
+
+import com.lastbug.firstbook.member.model.dto.MemberDTO;
+
+public class AdminDAO {
+	
+	private final Properties prop;
+	
+	
+	public AdminDAO() {
+		
+		prop = new Properties();
+		
+	}
+	
+	
+	public List<MemberDTO> selectAllMemList(Connection con) {
+		
+		
+		
+		
+		return null;
+	}
+	
+	
+}

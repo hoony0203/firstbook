@@ -1,0 +1,39 @@
+package com.lastbug.firstbook.admin.model.service;
+
+import static com.lastbug.firstbook.common.jdbc.JDBCTemplate.getConnection;
+
+import java.sql.Connection;
+import java.util.List;
+
+import com.lastbug.firstbook.member.model.dao.MemberDAO;
+import com.lastbug.firstbook.member.model.dto.MemberDTO;
+
+public class AdminService {
+
+	
+	
+	public class MemberService {
+		
+		private MemberDAO memDAO;
+		
+		public MemberService() {
+			
+			memDAO = new MemberDAO();
+			
+		}
+		
+		public List<MemberDTO> selectAllMemList() {
+
+			Connection con = getConnection();
+			
+			List<MemberDTO> memList = memDAO.selectAllMemList(con);
+			
+			return memList;
+		}
+	
+	
+	
+	
+	
+	
+}

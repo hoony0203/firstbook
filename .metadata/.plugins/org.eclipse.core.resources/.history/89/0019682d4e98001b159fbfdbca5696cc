@@ -1,0 +1,27 @@
+package com.lastbug.firstbook.member.model.dto;
+
+import java.sql.Date;
+
+public class MemberDTO implements java.io.Serializable{
+
+
+	private static final long serialVersionUID = -7685458380084706512L;
+	
+	private int num;
+	private String name;
+	private String id;
+	private String pwd;
+	private String email;
+	private String address;
+	private java.sql.Date birthDate;
+	private int loginCount;
+	private int coin;
+	private String canVoteYn;
+	
+	
+	
+	
+
+	
+	
+}
