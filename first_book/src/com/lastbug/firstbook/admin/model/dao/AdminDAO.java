@@ -57,22 +57,22 @@ public class AdminDAO {
 				
 				MemberDTO mem = new MemberDTO();
 				
-				mem.setNum(rset.getInt("MEM_NUM"));
-				mem.setName(rset.getString("MEM_NAME"));
-				mem.setId(rset.getString("MEM_ID"));
-				mem.setPwd(rset.getString("MEM_PWD"));
-				mem.setEmail(rset.getString("MEM_EMAIL"));
-				mem.setAddress(rset.getString("MEM_ADDRESS"));
-				mem.setBirthDate(rset.getDate("MEM_BIRTHDATE"));
-				mem.setLoginCount(rset.getInt("MEM_LOGIN_COUNT"));
-				mem.setCoin(rset.getInt("MEM_COIN"));
-				mem.setCanVoteYn(rset.getString("MEM_CAN_VOTE_YN"));
-				mem.setWithdrawYn(rset.getString("MEM_WITHDRAW_YN"));
-				mem.setWithdrawDate(rset.getDate("MEM_WITHDRAW_DATE"));
-				mem.setMemclass(rset.getString("MEM_CLASS"));
-				mem.setBlockYn(rset.getString("MEM_BLOCK_YN"));
-				mem.setBlockDate(rset.getDate("MEM_BLOCK_DATE"));
-				mem.setEnrollDate(rset.getDate("MEM_ENROLL_DATE"));
+				mem.setMemNum(rset.getInt("MEM_NUM"));
+				mem.setMemName(rset.getString("MEM_NAME"));
+				mem.setMemId(rset.getString("MEM_ID"));
+				mem.setMemPwd(rset.getString("MEM_PWD"));
+				mem.setMemEmail(rset.getString("MEM_EMAIL"));
+				mem.setMemAddress(rset.getString("MEM_ADDRESS"));
+				mem.setMemBirthDate(rset.getDate("MEM_BIRTHDATE"));
+				mem.setMemLoginCount(rset.getInt("MEM_LOGIN_COUNT"));
+				mem.setMemCoin(rset.getInt("MEM_COIN"));
+				mem.setMemCanVoteYn(rset.getString("MEM_CAN_VOTE_YN"));
+				mem.setMemWithdrawYn(rset.getString("MEM_WITHDRAW_YN"));
+				mem.setMemWithdrawDate(rset.getDate("MEM_WITHDRAW_DATE"));
+				mem.setMemClass(rset.getString("MEM_CLASS"));
+				mem.setMemBlockYn(rset.getString("MEM_BLOCK_YN"));
+				mem.setMemBlockDate(rset.getDate("MEM_BLOCK_DATE"));
+				mem.setMemEnrollDate(rset.getDate("MEM_ENROLL_DATE"));
 				
 				memList.add(mem);
 				

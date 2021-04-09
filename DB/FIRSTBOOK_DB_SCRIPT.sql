@@ -48,152 +48,152 @@ INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRES
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('1', '관리자', 'manager01', 'manager01', 'manager@naver.com', '서울시 강남구', TO_DATE('92/08/10', 'RR/MM/DD'),
-        10000, 100000000, 'Y', 'N', NULL, '관리자', 'N', NULL, TO_DATE('19/06/01', 'RR/MM/DD'));
+        10000, 100000000, 'Y', 'N', '-', '관리자', 'N', '-', TO_DATE('19/06/01', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('2', '김용승', 'dlagon77', 'dlagon', 'dlagon77@gmail.com', '서울시 서초구', TO_DATE('85/01/05', 'RR/MM/DD'), 100,
-        19500, 'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/06/02', 'RR/MM/DD'));
+        19500, 'Y', 'N', '-', '회원', 'N', '-', TO_DATE('19/06/02', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('3', '조영석', 'yscho', 'yscho0819', 'dongr52@naver.com', '서울시 서초구', TO_DATE('92/08/19', 'RR/MM/DD'), 94, 9600,
-        'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/06/05', 'RR/MM/DD'));
+        'Y', 'N', '-', '회원', 'N', '-', TO_DATE('19/06/05', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('4', '임창훈', 'chim', 'chim2010', 'chim12@gmail.com', '서울시 강동구', TO_DATE('90/06/21', 'RR/MM/DD'), 54, 15000,
-        'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/06/05', 'RR/MM/DD'));
+        'Y', 'N', '-', '회원', 'N', '-', TO_DATE('19/06/05', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('5', '송준원', 'jwsong', 'jwsong2011', 'jwsong08@gmail.com', '서울시 동작구', TO_DATE('96/05/19', 'RR/MM/DD'), 120,
-        20000, 'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/06/05', 'RR/MM/DD'));
+        20000, 'Y', 'N', '-', '회원', 'N', '-', TO_DATE('19/06/05', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('6', '천진민', 'jmchun', 'jmchun2012', 'jmchun88@gmail.com', '서울시 종로구', TO_DATE('97/10/18', 'RR/MM/DD'), 65,
-        60000, 'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/06/05', 'RR/MM/DD'));
+        60000, 'Y', 'N', '-', '회원', 'N', '-', TO_DATE('19/06/05', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('7', '김세정', 'sjkim', 'sjkim2012', 'jwkim8080@gmail.com', '경기도 과천시', TO_DATE('89/04/19', 'RR/MM/DD'), 21,
-        3300, 'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/06/06', 'RR/MM/DD'));
+        3300, 'Y', 'N', '-', '회원', 'N', '-', TO_DATE('19/06/06', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('8', '강동원', 'tuna10', 'dw2020', 'tunakang@gmail.com', '서울시 송파구', TO_DATE('70/10/12', 'RR/MM/DD'), 98, 20100,
-        'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/06/07', 'RR/MM/DD'));
+        'Y', 'N', '-', '회원', 'N', '-', TO_DATE('19/06/07', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('9', '황정민', 'jmhwang', 'jmjm1111', 'jmjm@naver.com', '서울시 금천구', TO_DATE('65/03/13', 'RR/MM/DD'), 20, 1700,
-        'Y', 'Y', '01/01/2021', '회원', 'N', NULL, TO_DATE('19/06/07', 'RR/MM/DD'));
+        'Y', 'Y', '01/01/2021', '회원', 'N', '-', TO_DATE('19/06/07', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('10', '김수홍', 'shkim', 'shhs1234', 'sh4000@naver.com', '인천 남동구', TO_DATE('71/01/30', 'RR/MM/DD'), 333, 10000,
-        'N', 'N', NULL, '회원', 'Y', '11/15/2019', TO_DATE('19/06/11', 'RR/MM/DD'));
+        'N', 'N', '-', '회원', 'Y', '11/15/2019', TO_DATE('19/06/11', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('11', '유재석', 'jsyoo', 'green12', 'jsyoo10@gmail.com', '서울시 금천구', TO_DATE('80/10/10', 'RR/MM/DD'), 51, 10000,
-        'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/07/01', 'RR/MM/DD'));
+        'Y', 'N', '-', '회원', 'N', NULL, TO_DATE('19/07/01', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('12', '양세찬', 'scyang', 'scvscv', 'scyang180@gmail.com', '경기도 분당', TO_DATE('86/04/15', 'RR/MM/DD'), 20, 5600,
-        'Y', 'Y', '10/24/2020', '회원', 'N', NULL, TO_DATE('19/07/02', 'RR/MM/DD'));
+        'Y', 'Y', '10/24/2020', '회원', 'N', '-', TO_DATE('19/07/02', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('13', '송중기', 'jksong', 'songsong', 'jksong19@gmail.com', '서울시 종로구', TO_DATE('85/01/05', 'RR/MM/DD'), 31, 0,
-        'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/07/02', 'RR/MM/DD'));
+        'Y', 'N', '-', '회원', 'N', '-', TO_DATE('19/07/02', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('14', '송혜교', 'hksong', 'hkhksong', 'hksong78@gmail.com', '서울시 금천구', TO_DATE('83/03/25', 'RR/MM/DD'), 32,
-        6300, 'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/07/03', 'RR/MM/DD'));
+        6300, 'Y', 'N', '-', '회원', 'N', '-', TO_DATE('19/07/03', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('15', '김태희', 'thkim', 'snukim', 'snukim@gmail.com', '부산 남동구', TO_DATE('86/10/19', 'RR/MM/DD'), 50, 5000, 'Y',
-        'N', NULL, '회원', 'N', NULL, TO_DATE('19/07/15', 'RR/MM/DD'));
+        'N', '-', '회원', 'N', '-', TO_DATE('19/07/15', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('16', '정지훈', 'jhjung', 'rainism', 'thief@gmail.com', '울산시', TO_DATE('85/07/05', 'RR/MM/DD'), 55, 60000, 'Y',
-        'N', NULL, '회원', 'N', NULL, TO_DATE('19/07/18', 'RR/MM/DD'));
+        'N', '-', '회원', 'N', '-', TO_DATE('19/07/18', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('17', '태연', 'tysnsd', 'tyty10', 'snsd@naver.com', '광주광역시', TO_DATE('89/05/16', 'RR/MM/DD'), 56, 0, 'N', 'N',
-        NULL, '회원', 'N', NULL, TO_DATE('19/07/20', 'RR/MM/DD'));
+        '-', '회원', 'N', '-', TO_DATE('19/07/20', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('18', '임윤아', 'yaim', 'imim11', 'imya@gmail.com', '서울시 동작구', TO_DATE('90/03/31', 'RR/MM/DD'), 70, 10800, 'Y',
-        'N', NULL, '회원', 'N', NULL, TO_DATE('19/07/21', 'RR/MM/DD'));
+        'N', '-', '회원', 'N', '-', TO_DATE('19/07/21', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('19', '조수영', 'sycho', 'chochosy', 'sycho11@gmail.com', '서울시 강서구', TO_DATE('92/11/05', 'RR/MM/DD'), 100,
-        15000, 'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/07/22', 'RR/MM/DD'));
+        15000, 'Y', 'N', '-', '회원', 'N', '-', TO_DATE('19/07/22', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('20', '공유', 'coffeecanu', 'sharingcanu', 'canu@gmail.com', '서울시 강서구', TO_DATE('79/02/15', 'RR/MM/DD'), 105,
-        20000, 'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/07/23', 'RR/MM/DD'));
+        20000, 'Y', 'N', '-', '회원', 'N', '-', TO_DATE('19/07/23', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('21', '임창정', 'cjim', 'sojujjang', 'soju1shot@gmail.com', '경기도 안성시', TO_DATE('75/05/03', 'RR/MM/DD'), 110,
-        13000, 'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/08/02', 'RR/MM/DD'));
+        13000, 'Y', 'N', '-', '회원', 'N', '-', TO_DATE('19/08/02', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('22', '배수지', 'suji', 'baesuji', 'sujiii@gmail.com', '경기도 안양시', TO_DATE('80/06/01', 'RR/MM/DD'), 120, 6000,
-        'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/08/03', 'RR/MM/DD'));
+        'Y', 'N', '-', '회원', 'N', '-', TO_DATE('19/08/03', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('23', '양동근', 'dgyang', 'golmok', 'golmokgil@gmail.com', '경기도 이천시', TO_DATE('81/09/11', 'RR/MM/DD'), 210,
-        5000, 'N', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/08/05', 'RR/MM/DD'));
+        5000, 'N', 'N', '-', '회원', 'N', '-', TO_DATE('19/08/05', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('24', '박서준', 'sjpark', 'sjsjpark', 'sjpark41@gmail.com', '경기도 일산시', TO_DATE('82/06/10', 'RR/MM/DD'), 9, 7000,
-        'Y', 'Y', '11/06/2020', '회원', 'N', NULL, TO_DATE('19/09/10', 'RR/MM/DD'));
+        'Y', 'Y', '11/06/2020', '회원', 'N', '-', TO_DATE('19/09/10', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('25', '박보검', 'bkpark', 'parkbk11', 'cutepark@gmail.com', '경기도 안양시', TO_DATE('90/08/01', 'RR/MM/DD'), 50,
-        1000, 'Y', 'N', NULL, '회원', 'Y', '08/15/2020', TO_DATE('19/10/11', 'RR/MM/DD'));
+        1000, 'Y', 'N', '-', '회원', 'Y', '08/15/2020', TO_DATE('19/10/11', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('26', '김태리', 'tlkim', '일shine', 'shinekim@gmail.com', '경기도 분당구', TO_DATE('87/03/05', 'RR/MM/DD'), 37, 3000,
-        'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/10/15', 'RR/MM/DD'));
+        'Y', 'N', '-', '회원', 'N', NULL, TO_DATE('19/10/15', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('27', '손나은', 'neson', 'sonne111', 'handson@gmail.com', '서울시 강남구', TO_DATE('88/12/11', 'RR/MM/DD'), 26, 8300,
-        'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/10/16', 'RR/MM/DD'));
+        'Y', 'N', '-', '회원', 'N', NULL, TO_DATE('19/10/16', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('28', '이효리', 'hllee', 'leejeju', '10minute@gmail.com', '서울시 강북구', TO_DATE('88/11/10', 'RR/MM/DD'), 56, 0,
-        'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/10/23', 'RR/MM/DD'));
+        'Y', 'N', '-', '회원', 'N', NULL, TO_DATE('19/10/23', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('29', '권상우', 'swkwon', 'kwonsw24', 'sixpack@gmail.com', '인천 남동구', TO_DATE('75/01/19', 'RR/MM/DD'), 3, 24300,
-        'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/10/25', 'RR/MM/DD'));
+        'Y', 'N', '-', '회원', 'N', NULL, TO_DATE('19/10/25', 'RR/MM/DD'));
 INSERT INTO MEM_INFO (MEM_NUM,  MEM_NAME, MEM_ID, MEM_PWD, MEM_EMAIL, MEM_ADDRESS, MEM_BIRTHDATE, MEM_LOGIN_COUNT,
                       MEM_COIN, MEM_CAN_VOTE_YN, MEM_WITHDRAW_YN, MEM_WITHDRAW_DATE, MEM_CLASS, MEM_BLOCK_YN,
                       MEM_BLOCK_DATE, MEM_ENROLL_DATE)
 VALUES ('30', '박재상', 'jspark', 'psypsy', 'gangnamstyle@gmail.com', '서울시 강동구', TO_DATE('77/12/10', 'RR/MM/DD'), 2, 0,
-        'Y', 'N', NULL, '회원', 'N', NULL, TO_DATE('19/10/28', 'RR/MM/DD'));
+        'Y', 'N', '-', '회원', 'N', NULL, TO_DATE('19/10/28', 'RR/MM/DD'));
 
 COMMIT;
 

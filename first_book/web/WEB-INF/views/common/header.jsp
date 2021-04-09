@@ -23,8 +23,6 @@
 				<li><a href="${ pageContext.servletContext.contextPath }/board/list">기능1</a></li>
 				<li><a href="${ pageContext.servletContext.contextPath }/thmbnail/list">기능 2</a></li>
 				<li><a href="${ pageContext.servletContext.contextPath }/admin/list">(test)계정 전체 조회</a></li>
-				
-				
 			</ul>
 		</div> <!-- nav-area end -->
 	</div> <!-- menu-area end -->

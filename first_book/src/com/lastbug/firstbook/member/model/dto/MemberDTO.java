@@ -1,238 +1,190 @@
 package com.lastbug.firstbook.member.model.dto;
 
+import java.io.Serializable;
 import java.sql.Date;
 
-public class MemberDTO implements java.io.Serializable{
-
-
+public class MemberDTO implements Serializable{
+	
 	private static final long serialVersionUID = -7685458380084706512L;
-	
-	private int num;
-	private String name;
-	private String id;
-	private String pwd;
-	private String email;
-	private String address;
-	private java.sql.Date birthDate;
-	private int loginCount;
-	private int coin;
-	private String canVoteYn;
-	private String withdrawYn;
-	private java.sql.Date withdrawDate;
-	private String memclass;
-	private String blockYn;
-	private java.sql.Date blockDate;
-	private java.sql.Date enrollDate;
-	
+
+	private int memNum;
+	private String memName;
+	private String memId;
+	private String memPwd;
+	private String memEmail;
+	private String memAddress;
+	private java.sql.Date memBirthDate;
+	private int memLoginCount;
+	private int memCoin;
+	private String memCanVoteYn;
+	private String memWithdrawYn;
+	private java.sql.Date memWithdrawDate;
+	private String memClass;
+	private String memBlockYn;
+	private java.sql.Date memBlockDate;
+	private java.sql.Date memEnrollDate;
 	
 	public MemberDTO() {
-
-	
 	}
 
-
-	public MemberDTO(int num, String name, String id, String pwd, String email, String address, Date birthDate,
-			int loginCount, int coin, String canVoteYn, String withdrawYn, Date withdrawDate, String memclass,
-			String blockYn, Date blockDate, Date enrollDate) {
-
-		this.num = num;
-		this.name = name;
-		this.id = id;
-		this.pwd = pwd;
-		this.email = email;
-		this.address = address;
-		this.birthDate = birthDate;
-		this.loginCount = loginCount;
-		this.coin = coin;
-		this.canVoteYn = canVoteYn;
-		this.withdrawYn = withdrawYn;
-		this.withdrawDate = withdrawDate;
-		this.memclass = memclass;
-		this.blockYn = blockYn;
-		this.blockDate = blockDate;
-		this.enrollDate = enrollDate;
+	public MemberDTO(int memNum, String memName, String memId, String memPwd, String memEmail, String memAddress,
+			Date memBirthDate, int memLoginCount, int memCoin, String memCanVoteYn, String memWithdrawYn,
+			Date memWithdrawDate, String memClass, String memBlockYn, Date memBlockDate, Date memEnrollDate) {
+		this.memNum = memNum;
+		this.memName = memName;
+		this.memId = memId;
+		this.memPwd = memPwd;
+		this.memEmail = memEmail;
+		this.memAddress = memAddress;
+		this.memBirthDate = memBirthDate;
+		this.memLoginCount = memLoginCount;
+		this.memCoin = memCoin;
+		this.memCanVoteYn = memCanVoteYn;
+		this.memWithdrawYn = memWithdrawYn;
+		this.memWithdrawDate = memWithdrawDate;
+		this.memClass = memClass;
+		this.memBlockYn = memBlockYn;
+		this.memBlockDate = memBlockDate;
+		this.memEnrollDate = memEnrollDate;
 	}
 
-
-	public int getNum() {
-		return num;
+	public int getMemNum() {
+		return memNum;
 	}
 
-
-	public void setNum(int num) {
-		this.num = num;
+	public void setMemNum(int memNum) {
+		this.memNum = memNum;
 	}
 
-
-	public String getName() {
-		return name;
+	public String getMemName() {
+		return memName;
 	}
 
-
-	public void setName(String name) {
-		this.name = name;
+	public void setMemName(String memName) {
+		this.memName = memName;
 	}
 
-
-	public String getId() {
-		return id;
+	public String getMemId() {
+		return memId;
 	}
 
-
-	public void setId(String id) {
-		this.id = id;
+	public void setMemId(String memId) {
+		this.memId = memId;
 	}
 
-
-	public String getPwd() {
-		return pwd;
+	public String getMemPwd() {
+		return memPwd;
 	}
 
-
-	public void setPwd(String pwd) {
-		this.pwd = pwd;
+	public void setMemPwd(String memPwd) {
+		this.memPwd = memPwd;
 	}
 
-
-	public String getEmail() {
-		return email;
+	public String getMemEmail() {
+		return memEmail;
 	}
 
-
-	public void setEmail(String email) {
-		this.email = email;
+	public void setMemEmail(String memEmail) {
+		this.memEmail = memEmail;
 	}
 
-
-	public String getAddress() {
-		return address;
+	public String getMemAddress() {
+		return memAddress;
 	}
 
-
-	public void setAddress(String address) {
-		this.address = address;
+	public void setMemAddress(String memAddress) {
+		this.memAddress = memAddress;
 	}
 
-
-	public java.sql.Date getBirthDate() {
-		return birthDate;
+	public java.sql.Date getMemBirthDate() {
+		return memBirthDate;
 	}
 
-
-	public void setBirthDate(java.sql.Date birthDate) {
-		this.birthDate = birthDate;
+	public void setMemBirthDate(java.sql.Date memBirthDate) {
+		this.memBirthDate = memBirthDate;
 	}
 
-
-	public int getLoginCount() {
-		return loginCount;
+	public int getMemLoginCount() {
+		return memLoginCount;
 	}
 
-
-	public void setLoginCount(int loginCount) {
-		this.loginCount = loginCount;
+	public void setMemLoginCount(int memLoginCount) {
+		this.memLoginCount = memLoginCount;
 	}
 
-
-	public int getCoin() {
-		return coin;
+	public int getMemCoin() {
+		return memCoin;
 	}
 
-
-	public void setCoin(int coin) {
-		this.coin = coin;
+	public void setMemCoin(int memCoin) {
+		this.memCoin = memCoin;
 	}
 
-
-	public String getCanVoteYn() {
-		return canVoteYn;
+	public String getMemCanVoteYn() {
+		return memCanVoteYn;
 	}
 
-
-	public void setCanVoteYn(String canVoteYn) {
-		this.canVoteYn = canVoteYn;
+	public void setMemCanVoteYn(String memCanVoteYn) {
+		this.memCanVoteYn = memCanVoteYn;
 	}
 
-
-	public String getWithdrawYn() {
-		return withdrawYn;
+	public String getMemWithdrawYn() {
+		return memWithdrawYn;
 	}
 
-
-	public void setWithdrawYn(String withdrawYn) {
-		this.withdrawYn = withdrawYn;
+	public void setMemWithdrawYn(String memWithdrawYn) {
+		this.memWithdrawYn = memWithdrawYn;
 	}
 
-
-	public java.sql.Date getWithdrawDate() {
-		return withdrawDate;
+	public java.sql.Date getMemWithdrawDate() {
+		return memWithdrawDate;
 	}
 
-
-	public void setWithdrawDate(java.sql.Date withdrawDate) {
-		this.withdrawDate = withdrawDate;
+	public void setMemWithdrawDate(java.sql.Date memWithdrawDate) {
+		this.memWithdrawDate = memWithdrawDate;
 	}
 
-
-	public String getMemclass() {
-		return memclass;
+	public String getMemClass() {
+		return memClass;
 	}
 
-
-	public void setMemclass(String memclass) {
-		this.memclass = memclass;
+	public void setMemClass(String memClass) {
+		this.memClass = memClass;
 	}
 
-
-	public String getBlockYn() {
-		return blockYn;
+	public String getMemBlockYn() {
+		return memBlockYn;
 	}
 
-
-	public void setBlockYn(String blockYn) {
-		this.blockYn = blockYn;
+	public void setMemBlockYn(String memBlockYn) {
+		this.memBlockYn = memBlockYn;
 	}
 
-
-	public java.sql.Date getBlockDate() {
-		return blockDate;
+	public java.sql.Date getMemBlockDate() {
+		return memBlockDate;
 	}
 
-
-	public void setBlockDate(java.sql.Date blockDate) {
-		this.blockDate = blockDate;
+	public void setMemBlockDate(java.sql.Date memBlockDate) {
+		this.memBlockDate = memBlockDate;
 	}
 
-
-	public java.sql.Date getEnrollDate() {
-		return enrollDate;
+	public java.sql.Date getMemEnrollDate() {
+		return memEnrollDate;
 	}
 
-
-	public void setEnrollDate(java.sql.Date enrollDate) {
-		this.enrollDate = enrollDate;
+	public void setMemEnrollDate(java.sql.Date memEnrollDate) {
+		this.memEnrollDate = memEnrollDate;
 	}
-
-
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
-
 
 	@Override
 	public String toString() {
-		return "MemberDTO [num=" + num + ", name=" + name + ", id=" + id + ", pwd=" + pwd + ", email=" + email
-				+ ", address=" + address + ", birthDate=" + birthDate + ", loginCount=" + loginCount + ", coin=" + coin
-				+ ", canVoteYn=" + canVoteYn + ", withdrawYn=" + withdrawYn + ", withdrawDate=" + withdrawDate
-				+ ", memclass=" + memclass + ", blockYn=" + blockYn + ", blockDate=" + blockDate + ", enrollDate="
-				+ enrollDate + "]";
+		return "MemberDTO [memNum=" + memNum + ", memName=" + memName + ", memId=" + memId + ", memPwd=" + memPwd
+				+ ", memEmail=" + memEmail + ", memAddress=" + memAddress + ", memBirthDate=" + memBirthDate
+				+ ", memLoginCount=" + memLoginCount + ", memCoin=" + memCoin + ", memCanVoteYn=" + memCanVoteYn
+				+ ", memWithdrawYn=" + memWithdrawYn + ", memWithdrawDate=" + memWithdrawDate + ", memClass=" + memClass
+				+ ", memBlockYn=" + memBlockYn + ", memBlockDate=" + memBlockDate + ", memEnrollDate=" + memEnrollDate
+				+ "]";
 	}
-	
-	
-	
-	
-	
 
-	
 	
 }
