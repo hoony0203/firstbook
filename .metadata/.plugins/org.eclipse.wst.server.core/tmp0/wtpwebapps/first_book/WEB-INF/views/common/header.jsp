@@ -6,9 +6,7 @@
 <head>
 <meta charset="UTF-8">
 
-<link rel="stylesheet" type="text/css" href="/firstbook/resources/css/common.css">
 
-<script type="text/javascript" src="/firstbook/resources/js/event.js"> </script>
 
 <title>Insert title here</title>
 
@@ -22,7 +20,7 @@
 				<li><a href="${ pageContext.servletContext.contextPath }/webnovel/list">웹소설리스트</a></li>
 				<li><a href="${ pageContext.servletContext.contextPath }/board/list">기능1</a></li>
 				<li><a href="${ pageContext.servletContext.contextPath }/thmbnail/list">기능 2</a></li>
-				<li><a href="${ pageContext.servletContext.contextPath }/admin/list">(test)계정 전체 조회</a></li>
+				<li><a href="${ pageContext.servletContext.contextPath }/admin/main">관리자 메인</a></li>
 			</ul>
 		</div> <!-- nav-area end -->
 	</div> <!-- menu-area end -->

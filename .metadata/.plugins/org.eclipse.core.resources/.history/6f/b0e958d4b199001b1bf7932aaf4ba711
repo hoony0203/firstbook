@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="selectAllMemList">
+     	SELECT /* com.lastbug.firstbook.admin.model.dao.AdminDAO#selectAllMemList()*/
+     	*
+     	FROM MEM_INFO
+	</entry>
+	<entry key="searchMemberNumber">
+		SELECT
+		*
+		FROM MEM_INFO A
+		WHERE A.MEM_NUM = ?
+	</entry>
+	<entry key="searchMemberName">
+		SELECT
+		*
+		FROM MEM_INFO A
+		WHERE A.MEM_NAME LIKE '%' || ? || '%'
+	</entry>
+		
+	<entry key="searchMemberEmail">
+		SELECT
+		*
+		FROM MEM_INFO A
+		WHERE A.MEM_EMAIL LIKE '%' || ? || '%'
+	</entry>
+	<entry key="searchMemberBirthDate">
+		SELECT
+		*
+		FROM MEM_INFO A
+		WHERE A.MEM_BIRTHDATE LIKE '%' || ? || '%'
+	</entry>
+	<entry key="searchMemberEnrollDate">
+		SELECT
+		*
+		FROM MEM_INFO A
+		WHERE A.MEM_ENROLLDATE LIKE '%' || ? || '%'
+	</entry>
+
+</properties>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+package com.lastbug.firstbook.admin.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.lastbug.firstbook.member.model.dto.MemberDTO;
+
+
+@WebServlet("/admin/search")
+public class SearchMemberListServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	}
+
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		int memNum = Integer.valueOf(request.getParameter("memNum"));
+		String name = request.getParameter("name");
+		String email = request.getParameter("email");
+		String birthDate = request.getParameter("birthDate");
+		String enrollDate = request.getParameter("enrollDate");
+				
+		MemberDTO searchMember = new MemberDTO();
+		
+		searchMember.setMemNum(memNum);
+		
+	}
+
+}
